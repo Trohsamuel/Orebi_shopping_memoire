@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on linux)" generated="2025-02-24T10:58:21.090292" rpa="false" schemaversion="5">
+<suite id="s1" name="Google" source="/home/black/ENV_DEV/e-commerce/orebishopping/google.robot">
+<test id="s1-t1" name="Test Minimal" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-24T10:58:21.618306" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2025-02-24T10:58:27.078817" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: failed to lookup address information: Try again</msg>
+<msg time="2025-02-24T10:58:27.618618" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-02-24T10:58:27.619064" level="FAIL">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x563f840607ca &lt;unknown&gt;
+#1 0x563f83b582f0 &lt;unknown&gt;
+#2 0x563f83b8f063 &lt;unknown&gt;
+#3 0x563f83b8b8c6 &lt;unknown&gt;
+#4 0x563f83bd8bc9 &lt;unknown&gt;
+#5 0x563f83bd8216 &lt;unknown&gt;
+#6 0x563f83bcc753 &lt;unknown&gt;
+#7 0x563f83b99baa &lt;unknown&gt;
+#8 0x563f83b9adfe &lt;unknown&gt;
+#9 0x563f8402b38b &lt;unknown&gt;
+#10 0x563f8402f307 &lt;unknown&gt;
+#11 0x563f84017e7c &lt;unknown&gt;
+#12 0x563f8402fec7 &lt;unknown&gt;
+#13 0x563f83ffc24f &lt;unknown&gt;
+#14 0x563f8404f2f8 &lt;unknown&gt;
+#15 0x563f8404f4c0 &lt;unknown&gt;
+#16 0x563f8405f646 &lt;unknown&gt;
+#17 0x7f173a290112 &lt;unknown&gt;
+</msg>
+<arg>${LOCALHOST_URL}</arg>
+<arg>Chrome</arg>
+<arg>chrome_options={"args": ["--user-data-dir=${UNIQUE_PROFILE_DIR}"]}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-02-24T10:58:21.616746" elapsed="6.009372">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x563f840607ca &lt;unknown&gt;
+#1 0x563f83b582f0 &lt;unknown&gt;
+#2 0x563f83b8f063 &lt;unknown&gt;
+#3 0x563f83b8b8c6 &lt;unknown&gt;
+#4 0x563f83bd8bc9 &lt;unknown&gt;
+#5 0x563f83bd8216 &lt;unknown&gt;
+#6 0x563f83bcc753 &lt;unknown&gt;
+#7 0x563f83b99baa &lt;unknown&gt;
+#8 0x563f83b9adfe &lt;unknown&gt;
+#9 0x563f8402b38b &lt;unknown&gt;
+#10 0x563f8402f307 &lt;unknown&gt;
+#11 0x563f84017e7c &lt;unknown&gt;
+#12 0x563f8402fec7 &lt;unknown&gt;
+#13 0x563f83ffc24f &lt;unknown&gt;
+#14 0x563f8404f2f8 &lt;unknown&gt;
+#15 0x563f8404f4c0 &lt;unknown&gt;
+#16 0x563f8405f646 &lt;unknown&gt;
+#17 0x7f173a290112 &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-02-24T10:58:27.627820" elapsed="0.000160"/>
+</kw>
+<status status="FAIL" start="2025-02-24T10:58:21.613638" elapsed="6.016443">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x563f840607ca &lt;unknown&gt;
+#1 0x563f83b582f0 &lt;unknown&gt;
+#2 0x563f83b8f063 &lt;unknown&gt;
+#3 0x563f83b8b8c6 &lt;unknown&gt;
+#4 0x563f83bd8bc9 &lt;unknown&gt;
+#5 0x563f83bd8216 &lt;unknown&gt;
+#6 0x563f83bcc753 &lt;unknown&gt;
+#7 0x563f83b99baa &lt;unknown&gt;
+#8 0x563f83b9adfe &lt;unknown&gt;
+#9 0x563f8402b38b &lt;unknown&gt;
+#10 0x563f8402f307 &lt;unknown&gt;
+#11 0x563f84017e7c &lt;unknown&gt;
+#12 0x563f8402fec7 &lt;unknown&gt;
+#13 0x563f83ffc24f &lt;unknown&gt;
+#14 0x563f8404f2f8 &lt;unknown&gt;
+#15 0x563f8404f4c0 &lt;unknown&gt;
+#16 0x563f8405f646 &lt;unknown&gt;
+#17 0x7f173a290112 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" start="2025-02-24T10:58:21.092524" elapsed="6.540424"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Google" id="s1" pass="0" fail="1" skip="0">Google</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-24T10:58:27.078817" level="WARN">Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json): error trying to connect: dns error: failed to lookup address information: Try again</msg>
+</errors>
+</robot>

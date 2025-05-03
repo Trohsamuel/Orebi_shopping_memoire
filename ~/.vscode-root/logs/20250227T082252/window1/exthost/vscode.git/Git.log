@@ -1,0 +1,90 @@
+2025-02-27 08:23:24.370 [info] [main] Log level: Info
+2025-02-27 08:23:24.370 [info] [main] Validating found git in: "git"
+2025-02-27 08:23:24.370 [info] [main] Using git "2.45.2" from "git"
+2025-02-27 08:23:24.370 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-27 08:23:24.378 [info] > git rev-parse --show-toplevel [140ms]
+2025-02-27 08:23:24.378 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.378 [info] > git rev-parse --show-toplevel [274ms]
+2025-02-27 08:23:24.378 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.495 [info] > git rev-parse --show-toplevel [39ms]
+2025-02-27 08:23:24.495 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.575 [info] > git rev-parse --show-toplevel [37ms]
+2025-02-27 08:23:24.575 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.683 [info] > git rev-parse --show-toplevel [32ms]
+2025-02-27 08:23:24.683 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.820 [info] > git rev-parse --show-toplevel [31ms]
+2025-02-27 08:23:24.820 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.937 [info] > git rev-parse --show-toplevel [37ms]
+2025-02-27 08:23:24.942 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:24.968 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (1)
+2025-02-27 08:23:29.445 [info] > git rev-parse --show-toplevel [11ms]
+2025-02-27 08:23:29.445 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:30.029 [info] > git rev-parse --show-toplevel [19ms]
+2025-02-27 08:23:30.029 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:31.809 [info] > git rev-parse --show-toplevel [42ms]
+2025-02-27 08:23:31.809 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:34.304 [info] > git rev-parse --show-toplevel [10ms]
+2025-02-27 08:23:34.304 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:34.638 [info] > git rev-parse --show-toplevel [5ms]
+2025-02-27 08:23:34.638 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:23:46.488 [info] > git rev-parse --show-toplevel [16ms]
+2025-02-27 08:23:46.491 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:24:01.199 [info] > git rev-parse --show-toplevel [29ms]
+2025-02-27 08:24:01.200 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:24:04.345 [info] > git rev-parse --show-toplevel [75ms]
+2025-02-27 08:24:04.362 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:24:20.256 [info] > git rev-parse --show-toplevel [28ms]
+2025-02-27 08:24:20.260 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-27 08:24:42.645 [info] > git rev-parse --show-toplevel [46ms]
+2025-02-27 08:24:42.645 [info] fatal: detected dubious ownership in repository at '/home/black/ENV_DEV/e-commerce/orebishopping'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /home/black/ENV_DEV/e-commerce/orebishopping

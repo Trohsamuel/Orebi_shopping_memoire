@@ -1,0 +1,14 @@
+2025-02-27 08:22:56.065 [info] update#setState idle
+2025-02-27 08:23:25.564 [info] update#setState checking for updates
+2025-02-27 08:23:25.787 [info] update#setState idle
+2025-02-27 09:51:04.384 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-27 09:51:04.482 [info] update#setState checking for updates
+2025-02-27 09:51:05.380 [info] update#setState idle
+2025-02-27 11:23:58.174 [info] update#setState checking for updates
+2025-02-27 11:23:59.811 [info] update#setState idle
+2025-02-27 12:25:35.179 [warning] No ptyHost heartbeat after 6 seconds
+2025-02-27 12:25:35.329 [info] update#setState checking for updates
+2025-02-27 12:25:36.636 [info] update#setState idle
+2025-02-27 12:52:36.331 [error] Blocked vscode-file request vscode-file://vscode-app/usr/share/code/resources/app/out/vs/editor/common/services/editorSimpleWorkerMain.js#TextEditorWorker
+2025-02-27 12:52:36.661 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 138728]: crashed with code 15 and reason 'killed'
+2025-02-27 12:52:37.154 [info] Extension host with pid 138738 exited with code: 0, signal: unknown.

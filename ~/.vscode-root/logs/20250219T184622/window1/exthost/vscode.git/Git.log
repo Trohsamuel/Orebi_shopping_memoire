@@ -1,0 +1,118 @@
+2025-02-19 18:46:40.471 [info] [main] Log level: Info
+2025-02-19 18:46:40.471 [info] [main] Validating found git in: "git"
+2025-02-19 18:46:40.471 [info] [main] Using git "2.45.2" from "git"
+2025-02-19 18:46:40.471 [info] [Model][doInitialScan] Initial repository scan started
+2025-02-19 18:46:40.471 [info] > git rev-parse --show-toplevel [101ms]
+2025-02-19 18:46:40.482 [info] > git rev-parse --git-dir --git-common-dir [19ms]
+2025-02-19 18:46:40.616 [info] [Model][openRepository] Opened repository: /home/black/ENV_DEV/e-commerce/orebishopping
+2025-02-19 18:46:40.870 [info] > git rev-parse --show-toplevel [51ms]
+2025-02-19 18:46:40.876 [info] > git config --get commit.template [147ms]
+2025-02-19 18:46:41.700 [info] > git rev-parse --show-toplevel [719ms]
+2025-02-19 18:46:41.847 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [260ms]
+2025-02-19 18:46:42.028 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:46:42.079 [info] > git rev-parse --show-toplevel [265ms]
+2025-02-19 18:46:42.092 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-02-19 18:46:42.256 [info] > git rev-parse refs/remotes/origin/master [228ms]
+2025-02-19 18:46:42.390 [info] > git check-ignore -v -z --stdin [241ms]
+2025-02-19 18:46:42.400 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [42ms]
+2025-02-19 18:46:42.642 [info] > git status -z -uall [336ms]
+2025-02-19 18:46:43.004 [info] > git check-ignore -v -z --stdin [215ms]
+2025-02-19 18:46:43.005 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [241ms]
+2025-02-19 18:46:43.100 [info] > git config --get commit.template [132ms]
+2025-02-19 18:46:43.109 [info] > git config --get --local branch.master.vscode-merge-base [21ms]
+2025-02-19 18:46:43.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [47ms]
+2025-02-19 18:46:43.279 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [79ms]
+2025-02-19 18:46:43.302 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:46:43.307 [info] > git merge-base refs/heads/master refs/remotes/origin/master [30ms]
+2025-02-19 18:46:43.337 [info] > git rev-parse refs/remotes/origin/master [35ms]
+2025-02-19 18:46:43.419 [info] > git diff --name-status -z --diff-filter=ADMR 189587d0d1420aed73eca5f62e08f3103878169c...refs/remotes/origin/master [83ms]
+2025-02-19 18:46:43.451 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [33ms]
+2025-02-19 18:46:43.565 [info] > git status -z -uall [180ms]
+2025-02-19 18:46:51.531 [info] > git check-ignore -v -z --stdin [38ms]
+2025-02-19 18:46:57.810 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [7662ms]
+2025-02-19 18:47:15.259 [info] > git config --get commit.template [15ms]
+2025-02-19 18:47:15.265 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-02-19 18:47:15.281 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:15.288 [info] > git rev-parse refs/remotes/origin/master [7ms]
+2025-02-19 18:47:15.325 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2025-02-19 18:47:15.377 [info] > git status -z -uall [79ms]
+2025-02-19 18:47:20.433 [info] > git config --get commit.template [9ms]
+2025-02-19 18:47:20.435 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-02-19 18:47:20.447 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:20.449 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2025-02-19 18:47:20.476 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-19 18:47:20.527 [info] > git status -z -uall [65ms]
+2025-02-19 18:47:25.573 [info] > git config --get commit.template [6ms]
+2025-02-19 18:47:25.602 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2025-02-19 18:47:25.612 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:25.615 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2025-02-19 18:47:25.633 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-02-19 18:47:25.654 [info] > git status -z -uall [34ms]
+2025-02-19 18:47:30.764 [info] > git config --get commit.template [55ms]
+2025-02-19 18:47:30.772 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [21ms]
+2025-02-19 18:47:30.819 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:30.828 [info] > git rev-parse refs/remotes/origin/master [9ms]
+2025-02-19 18:47:30.924 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [28ms]
+2025-02-19 18:47:31.073 [info] > git status -z -uall [223ms]
+2025-02-19 18:47:36.181 [info] > git config --get commit.template [6ms]
+2025-02-19 18:47:36.183 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-02-19 18:47:36.196 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:36.196 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2025-02-19 18:47:36.219 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-02-19 18:47:36.233 [info] > git status -z -uall [24ms]
+2025-02-19 18:47:41.315 [info] > git config --get commit.template [28ms]
+2025-02-19 18:47:41.330 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2025-02-19 18:47:41.359 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:47:41.377 [info] > git rev-parse refs/remotes/origin/master [18ms]
+2025-02-19 18:47:41.484 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [18ms]
+2025-02-19 18:47:41.569 [info] > git status -z -uall [153ms]
+2025-02-19 18:48:14.437 [info] > git config --get commit.template [15ms]
+2025-02-19 18:48:14.444 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2025-02-19 18:48:14.457 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:14.465 [info] > git rev-parse refs/remotes/origin/master [8ms]
+2025-02-19 18:48:14.500 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [9ms]
+2025-02-19 18:48:14.550 [info] > git status -z -uall [75ms]
+2025-02-19 18:48:15.544 [info] > git check-ignore -v -z --stdin [17ms]
+2025-02-19 18:48:19.736 [info] > git config --get commit.template [93ms]
+2025-02-19 18:48:19.759 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [29ms]
+2025-02-19 18:48:19.813 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:19.847 [info] > git rev-parse refs/remotes/origin/master [33ms]
+2025-02-19 18:48:20.078 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [46ms]
+2025-02-19 18:48:20.207 [info] > git status -z -uall [270ms]
+2025-02-19 18:48:25.456 [info] > git config --get commit.template [70ms]
+2025-02-19 18:48:25.463 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2025-02-19 18:48:25.481 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:25.485 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2025-02-19 18:48:25.535 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+2025-02-19 18:48:25.574 [info] > git status -z -uall [75ms]
+2025-02-19 18:48:36.561 [info] > git config --get commit.template [28ms]
+2025-02-19 18:48:36.573 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2025-02-19 18:48:36.597 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:36.608 [info] > git rev-parse refs/remotes/origin/master [10ms]
+2025-02-19 18:48:36.692 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [26ms]
+2025-02-19 18:48:37.505 [info] > git status -z -uall [880ms]
+2025-02-19 18:48:38.605 [info] > git check-ignore -v -z --stdin [76ms]
+2025-02-19 18:48:42.620 [info] > git config --get commit.template [7ms]
+2025-02-19 18:48:42.639 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-02-19 18:48:42.653 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:42.660 [info] > git rev-parse refs/remotes/origin/master [6ms]
+2025-02-19 18:48:42.733 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+2025-02-19 18:48:42.796 [info] > git status -z -uall [116ms]
+2025-02-19 18:48:47.867 [info] > git config --get commit.template [10ms]
+2025-02-19 18:48:47.868 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-02-19 18:48:47.874 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:47.877 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2025-02-19 18:48:47.899 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-02-19 18:48:47.912 [info] > git status -z -uall [27ms]
+2025-02-19 18:48:52.953 [info] > git config --get commit.template [14ms]
+2025-02-19 18:48:52.959 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-02-19 18:48:52.972 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:48:52.977 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2025-02-19 18:48:53.060 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+2025-02-19 18:48:53.293 [info] > git status -z -uall [304ms]
+2025-02-19 18:53:22.139 [info] > git config --get commit.template [19ms]
+2025-02-19 18:53:22.148 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [10ms]
+2025-02-19 18:53:22.165 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/black/ENV_DEV/e-commerce/orebishopping/.git/refs/remotes/origin/master'
+2025-02-19 18:53:22.166 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-02-19 18:53:22.218 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [15ms]
+2025-02-19 18:53:22.372 [info] > git status -z -uall [190ms]

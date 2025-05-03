@@ -1,0 +1,6 @@
+2025-02-19 18:47:26.379 [info] Getting Manifest... robocorp.robotframework-lsp
+2025-02-19 18:47:27.185 [info] Installing extension: robocorp.robotframework-lsp {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-12T23:20:35.343Z"}}
+2025-02-19 18:47:36.381 [info] Extension signature verification result for robocorp.robotframework-lsp: Success. Executed: true. Duration: 5151ms.
+2025-02-19 18:47:43.045 [info] Extracted extension to file:///root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0: robocorp.robotframework-lsp
+2025-02-19 18:47:43.328 [info] Renamed to /root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0
+2025-02-19 18:47:43.403 [info] Extension installed successfully: robocorp.robotframework-lsp vscode-userdata:/root/.vscode/extensions/extensions.json

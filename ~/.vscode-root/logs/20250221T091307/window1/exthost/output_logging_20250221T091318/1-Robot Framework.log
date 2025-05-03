@@ -1,0 +1,595 @@
+NOT using integration with Robocorp Code nor Sema4ai.
+Getting language server Python executable.
+Unable to get python executable from vscode-python. ms-python.python extension not found.
+Waiting for RobotFramework (python) Language Server to finish activating...
+Language server Python executable: searching in PATH.
+Language server Python executable: found in PATH: /usr/bin/python3
+Starting RobotFramework Language Server with args: /usr/bin/python3,-u,/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/__main__.py,-v
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robotframework_ls.__main__
+Arguments: ['-v']
+
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robotframework_ls.__main__
+Python: 3.12.8 (main, Dec 13 2024, 13:19:48) [GCC 14.2.0] - lsp: 1.13.0 (<module 'robotframework_ls' from '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/__init__.py'>) - platform: linux - sys.prefix: /usr - sys.executable: /usr/bin/python3
+
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robotframework_ls.__main__
+CPUs: 2
+
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.python_ls
+Starting RobotFrameworkLanguageServer IO language server. pid: 36302
+
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robotframework_ls.robotframework_ls_impl
+Using watch implementation: fsnotify (customize with ROBOTFRAMEWORK_LS_WATCH_IMPL environment variable)
+
+lsp: 2025-02-21 09:13:21 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.remote_fs_observer_impl
+Initializing Remote FS Observer with the following args: ['/usr/bin/python3', '-u', '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/vendored/robocorp_ls_core/remote_fs_observer__main__.py', '-v']
+
+remote_fs_observer: 2025-02-21 09:13:22 UTC pid: 36314 - MainThread - INFO - robocorp_ls_core.remote_fs_observer__main__
+Arguments: ['-v']
+
+remote_fs_observer: 2025-02-21 09:13:22 UTC pid: 36314 - MainThread - INFO - robocorp_ls_core.remote_fs_observer__main__
+Python: 3.12.8 (main, Dec 13 2024, 13:19:48) [GCC 14.2.0] - lsp: <unable to get __version__> (<module 'robocorp_ls_core' from '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/vendored/robocorp_ls_core/__init__.py'>) - platform: linux - sys.prefix: /usr - sys.executable: /usr/bin/python3
+
+remote_fs_observer: 2025-02-21 09:13:22 UTC pid: 36314 - MainThread - INFO - robocorp_ls_core.remote_fs_observer__main__
+CPUs: 2
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.__main__
+Arguments: ['-v']
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.__main__
+Python: 3.12.8 (main, Dec 13 2024, 13:19:48) [GCC 14.2.0] - lsp: 1.13.0 (<module 'robotframework_ls' from '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/__init__.py'>) - platform: linux - sys.prefix: /usr - sys.executable: /usr/bin/python3
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.__main__
+CPUs: 2
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robocorp_ls_core.python_ls
+Starting RobotFrameworkServerApiWithObserver IO language server. pid: 36341
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 9, in get_robot_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+User libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/user
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Builtins libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Cache libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/cache
+
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_0 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_1 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_2 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_3 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_4 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_5 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_1 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Collections.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Collections', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Collections.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_1 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_3 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Telnet.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Telnet', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Telnet.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_3 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_5 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: BuiltIn.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'BuiltIn', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/BuiltIn.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_5 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_4 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: String.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'String', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/String.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_4 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_2 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Process.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Process', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Process.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_2 - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 20, in _get_robot_naked_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_0 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: OperatingSystem.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'OperatingSystem', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/OperatingSystem.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_1 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: XML.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'XML', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/XML.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_5 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Dialogs.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Dialogs', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Dialogs.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_2 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Screenshot.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Screenshot', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Screenshot.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_3 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: Easter.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'Easter', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/Easter.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:23 UTC pid: 36341 - ThreadPoolExecutor-1_4 - EXCEPTION - robotframework_ls.impl.libspec_manager
+Error creating libspec: DateTime.
+Return code: 1
+Output:
+/usr/bin/python3: Error while finding module specification for 'robot.libdoc' (ModuleNotFoundError: No module named 'robot')
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 1051, in _cached_create_libspec
+    self._subprocess_check_output(
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/libspec_manager.py", line 933, in _subprocess_check_output
+    return subprocess.check_output(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-m', 'robot.libdoc', '--format', 'XML', '--specdocformat', 'RAW', 'DateTime', '/root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins/DateTime.libspec']' returned non-zero exit status 1.
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.__main__
+Arguments: ['-v']
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.__main__
+Python: 3.12.8 (main, Dec 13 2024, 13:19:48) [GCC 14.2.0] - lsp: 1.13.0 (<module 'robotframework_ls' from '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/__init__.py'>) - platform: linux - sys.prefix: /usr - sys.executable: /usr/bin/python3
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.__main__
+CPUs: 2
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robocorp_ls_core.python_ls
+Starting RobotFrameworkServerApiWithObserver IO language server. pid: 36529
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 9, in get_robot_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+User libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/user
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Builtins libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins
+
+server-api: 2025-02-21 09:13:32 UTC pid: 36529 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Cache libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/cache
+
+RobotFramework Language Server ready. Took: 14.6s
+server-api: 2025-02-21 09:13:35 UTC pid: 36529 - Thread-6 (_on_thread) - EXCEPTION - robotframework_ls.impl.robot_workspace
+Error in workpace indexer.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 322, in _on_thread
+    self._on_thread_internal()
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 352, in _on_thread_internal
+    for uri, symbols_cache in self.iter_uri_and_symbols_cache():
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 528, in iter_uri_and_symbols_cache
+    symbols_cache = _compute_symbols_from_ast(ctx)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 118, in _compute_symbols_from_ast
+    ast = completion_context.get_ast()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/vendored/robocorp_ls_core/cache.py", line 67, in new_func
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/completion_context.py", line 283, in get_ast
+    return self.doc.get_ast()
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/vendored/robocorp_ls_core/cache.py", line 67, in new_func
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 719, in get_ast
+    return self.generate_ast_uncached()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_workspace.py", line 722, in generate_ast_uncached
+    from robot.api import get_model, get_resource_model, get_init_model
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.__main__
+Arguments: ['-v']
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.__main__
+Python: 3.12.8 (main, Dec 13 2024, 13:19:48) [GCC 14.2.0] - lsp: 1.13.0 (<module 'robotframework_ls' from '/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/__init__.py'>) - platform: linux - sys.prefix: /usr - sys.executable: /usr/bin/python3
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.__main__
+CPUs: 2
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robocorp_ls_core.python_ls
+Starting RobotFrameworkServerApiWithObserver IO language server. pid: 36582
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 9, in get_robot_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+User libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/user
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Builtins libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/builtins
+
+server-api: 2025-02-21 09:13:35 UTC pid: 36582 - MainThread - INFO - robotframework_ls.impl.libspec_manager
+Cache libspec dir: /root/.robotframework-ls/specs/v2/31f2aee4_unknown/cache
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - EXCEPTION - robotframework_ls.server_api.server
+Error in "import robot".
+It seems that Robot Framework is not installed in /usr/bin/python3.
+Please install it in your environment and restart the Robot Framework Language Server
+or set: "robot.language-server.python" or "robot.python.executable"
+to point to a python installation that has Robot Framework installed.
+Hint: with pip it can be installed with:
+/usr/bin/python3 -m pip install robotframework
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/server_api/server.py", line 197, in m_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Error in "import robot".
+It seems that Robot Framework is not installed in /usr/bin/python3.
+Please install it in your environment and restart the Robot Framework Language Server
+or set: "robot.language-server.python" or "robot.python.executable"
+to point to a python installation that has Robot Framework installed.
+Hint: with pip it can be installed with:
+/usr/bin/python3 -m pip install robotframework
+
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 5
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.monitor
+Cancelled: Message: id: 7, method: textDocument/codeLens
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36529 - ThreadPoolExecutor-0_0 - EXCEPTION - robotframework_ls.server_api.server
+Error in "import robot".
+It seems that Robot Framework is not installed in /usr/bin/python3.
+Please install it in your environment and restart the Robot Framework Language Server
+or set: "robot.language-server.python" or "robot.python.executable"
+to point to a python installation that has Robot Framework installed.
+Hint: with pip it can be installed with:
+/usr/bin/python3 -m pip install robotframework
+
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/server_api/server.py", line 197, in m_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:38 UTC pid: 36529 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Error in "import robot".
+It seems that Robot Framework is not installed in /usr/bin/python3.
+Please install it in your environment and restart the Robot Framework Language Server
+or set: "robot.language-server.python" or "robot.python.executable"
+to point to a python installation that has Robot Framework installed.
+Hint: with pip it can be installed with:
+/usr/bin/python3 -m pip install robotframework
+
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 9
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 4
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.monitor
+Cancelled: Message: id: 10, method: textDocument/documentSymbol
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.monitor
+Cancelled: Message: id: 12, method: textDocument/documentSymbol
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 11
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 3
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:38 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Received cancel notification for unknown message id 8
+
+server-api: 2025-02-21 09:13:38 UTC pid: 36582 - MainThread - EXCEPTION - robotframework_ls.impl.robot_version
+Unable to get robot version.
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/impl/robot_version.py", line 9, in get_robot_version
+    import robot  # noqa
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'robot'
+server-api: 2025-02-21 09:13:39 UTC pid: 36582 - ThreadPoolExecutor-0_0 - INFO - robotframework_ls.server_api.server
+Problem with `robotframework` dependency. See previous errors.
+
+lsp: 2025-02-21 09:13:39 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+lsp: 2025-02-21 09:13:40 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+lsp: 2025-02-21 09:13:45 UTC pid: 36302 - MainThread - INFO - robocorp_ls_core.jsonrpc.endpoint
+Ignoring notification for unknown method $/setTrace
+
+remote_fs_observer: 2025-02-21 09:20:01 UTC pid: 36314 - _FSNotifyObserver - EXCEPTION - robocorp_ls_core.jsonrpc.streams
+Failed to write message to output file {'command': 'on_change', 'on_change_id': '36341 - 10 - 0.14388520009566863', 'src_path': '/home/black/ENV_DEV/e-commerce/orebishopping/rpa_e-commerce.robot'} - closed: False
+
+Traceback (most recent call last):
+  File "/root/.vscode/extensions/robocorp.robotframework-lsp-1.13.0/src/robotframework_ls/vendored/robocorp_ls_core/jsonrpc/streams.py", line 229, in write
+    stream.flush()
+  File "/usr/lib/python3.12/socket.py", line 738, in write
+    return self._sock.send(b)
+           ^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe

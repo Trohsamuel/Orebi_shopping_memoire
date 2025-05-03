@@ -1,0 +1,25 @@
+2025-02-21 09:13:10.016 [info] update#setState idle
+2025-02-21 09:13:39.762 [info] update#setState checking for updates
+2025-02-21 09:13:45.929 [error] #1: https://update.code.visualstudio.com/api/update/linux-x64/stable/e54c774e0add60467559eb0d1e229c6452cf8447 - error undefined net::ERR_NAME_NOT_RESOLVED
+2025-02-21 09:13:45.934 [error] update#isLatestVersion(): failed to check for updates
+2025-02-21 09:13:45.940 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-02-21 09:14:10.508 [error] #2: https://update.code.visualstudio.com/api/update/linux-x64/stable/e54c774e0add60467559eb0d1e229c6452cf8447 - error undefined net::ERR_NAME_NOT_RESOLVED
+2025-02-21 09:14:10.509 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-02-21 09:14:10.509 [info] update#setState idle
+2025-02-21 10:13:39.764 [info] update#setState checking for updates
+2025-02-21 10:14:04.553 [error] #3: https://update.code.visualstudio.com/api/update/linux-x64/stable/e54c774e0add60467559eb0d1e229c6452cf8447 - error undefined net::ERR_NAME_NOT_RESOLVED
+2025-02-21 10:14:04.553 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-02-21 10:14:04.554 [info] update#setState idle
+2025-02-21 11:13:39.773 [info] update#setState checking for updates
+2025-02-21 11:14:07.368 [error] #4: https://update.code.visualstudio.com/api/update/linux-x64/stable/e54c774e0add60467559eb0d1e229c6452cf8447 - error undefined net::ERR_NAME_NOT_RESOLVED
+2025-02-21 11:14:07.369 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:117531)
+    at SimpleURLLoaderWrapper.emit (node:events:518:28)
+2025-02-21 11:14:07.369 [info] update#setState idle
+2025-02-21 11:37:23.941 [warning] No ptyHost heartbeat after 6 seconds
