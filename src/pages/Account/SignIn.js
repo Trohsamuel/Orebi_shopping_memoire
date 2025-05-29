@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { logoLight } from "../../assets/images";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  
   // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,9 +13,9 @@ const SignIn = () => {
   // ============= Error Msg Start here =================
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
-
   // ============= Error Msg End here ===================
   const [successMsg, setSuccessMsg] = useState("");
+  
   // ============= Event Handler Start here =============
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -23,6 +25,17 @@ const SignIn = () => {
     setPassword(e.target.value);
     setErrPassword("");
   };
+  
+  // FONCTION DE DÉCONNEXION CORRIGÉE
+  const handleLogout = () => {
+    setSuccessMsg("");
+    setEmail("");
+    setPassword("");
+    setErrEmail("");
+    setErrPassword("");
+    navigate("/");
+  };
+  
   // ============= Event Handler End here ===============
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -43,6 +56,7 @@ const SignIn = () => {
       setPassword("");
     }
   };
+  
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
@@ -119,14 +133,14 @@ const SignIn = () => {
             <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
-            <Link to="/signup">
-              <button
-                className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold 
+            <button
+              id="logout-btn"
+              onClick={handleLogout}
+              className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold 
             tracking-wide hover:bg-black hover:text-white duration-300"
-              >
-                Sign Up
-              </button>
-            </Link>
+            >
+              Se déconnecter
+            </button>
           </div>
         ) : (
           <form className="w-full lgl:w-[450px] h-screen flex items-center justify-center">
