@@ -50,7 +50,7 @@ const SignIn = () => {
     // ============== Getting the value ==============
     if (email && password) {
       setSuccessMsg(
-        `Hello dear, Thank you for your attempt. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
+        `Bonjour ${capitalizedName}, merci de votre connexion ! Nous traitons votre accès. Restez connecté(e), une assistance supplémentaire vous sera envoyée par mail à ${email}`
       );
       setEmail("");
       setPassword("");
