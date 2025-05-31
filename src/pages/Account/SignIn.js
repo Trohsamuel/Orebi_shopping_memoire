@@ -6,27 +6,22 @@ import { logoLight } from "../../assets/images";
 const SignIn = () => {
   const navigate = useNavigate();
   
-  // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // ============= Initial State End here ===============
-  // ============= Error Msg Start here =================
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
-  // ============= Error Msg End here ===================
   const [successMsg, setSuccessMsg] = useState("");
   
-  // ============= Event Handler Start here =============
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setErrEmail("");
   };
+  
   const handlePassword = (e) => {
     setPassword(e.target.value);
     setErrPassword("");
   };
   
-  // FONCTION DE DÉCONNEXION CORRIGÉE
   const handleLogout = () => {
     setSuccessMsg("");
     setEmail("");
@@ -36,29 +31,28 @@ const SignIn = () => {
     navigate("/");
   };
   
-  // ============= Event Handler End here ===============
-  const handleSignUpUltraSimple = (e) => {
-  e.preventDefault();
+  const handleSignUp = (e) => {
+    e.preventDefault();
 
-  if (!email) {
-    setErrEmail("Enter your email");
-  }
+    if (!email) {
+      setErrEmail("Enter your email");
+    }
 
-  if (!password) {
-    setErrPassword("Create a password");
-  }
-  
-  if (email && password) {
-    const firstName = email.split('@')[0];
+    if (!password) {
+      setErrPassword("Create a password");
+    }
     
-    setSuccessMsg(
-      `Bonjour ${firstName} ! Merci de votre connexion. Nous validons votre accès. Restez connecté(e), une assistance vous sera envoyée à ${email}`
-    );
-    
-    setEmail("");
-    setPassword("");
-  }
-};
+    if (email && password) {
+      const firstName = email.split('@')[0];
+      
+      setSuccessMsg(
+        `Bonjour ${firstName} ! Merci de votre connexion. Nous validons votre accès. Restez connecté(e), une assistance vous sera envoyée à ${email}`
+      );
+      
+      setEmail("");
+      setPassword("");
+    }
+  };
   
   return (
     <div className="w-full h-screen flex items-center justify-center">
@@ -152,7 +146,6 @@ const SignIn = () => {
                 Sign in
               </h1>
               <div className="flex flex-col gap-3">
-                {/* Email */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
                     Work Email
@@ -172,7 +165,6 @@ const SignIn = () => {
                   )}
                 </div>
 
-                {/* Password */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
                     Password
