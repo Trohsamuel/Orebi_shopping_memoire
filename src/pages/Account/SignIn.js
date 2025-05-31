@@ -37,25 +37,28 @@ const SignIn = () => {
   };
   
   // ============= Event Handler End here ===============
-  const handleSignUp = (e) => {
-    e.preventDefault();
+  const handleSignUpUltraSimple = (e) => {
+  e.preventDefault();
 
-    if (!email) {
-      setErrEmail("Enter your email");
-    }
+  if (!email) {
+    setErrEmail("Enter your email");
+  }
 
-    if (!password) {
-      setErrPassword("Create a password");
-    }
-    // ============== Getting the value ==============
-    if (email && password) {
-      setSuccessMsg(
-        `Bonjour ${capitalizedName}, merci de votre connexion ! Nous traitons votre accès. Restez connecté(e), une assistance supplémentaire vous sera envoyée par mail à ${email}`
-      );
-      setEmail("");
-      setPassword("");
-    }
-  };
+  if (!password) {
+    setErrPassword("Create a password");
+  }
+  
+  if (email && password) {
+    const firstName = email.split('@')[0];
+    
+    setSuccessMsg(
+      `Bonjour ${firstName} ! Merci de votre connexion. Nous validons votre accès. Restez connecté(e), une assistance vous sera envoyée à ${email}`
+    );
+    
+    setEmail("");
+    setPassword("");
+  }
+};
   
   return (
     <div className="w-full h-screen flex items-center justify-center">
