@@ -11,6 +11,7 @@ const SignIn = () => {
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -23,32 +24,75 @@ const SignIn = () => {
   };
   
   const handleLogout = () => {
+    // Nettoyer les données de session
+    localStorage.removeItem('userToken');
+    sessionStorage.removeItem('userInfo');
+    
+    // Réinitialiser l'état
     setSuccessMsg("");
     setEmail("");
     setPassword("");
     setErrEmail("");
     setErrPassword("");
+    setIsLoggedIn(false);
+    
+    // Message de confirmation
+    //alert('Déconnexion réussie');
+    
+    // Rediriger vers la page d'accueil
     navigate("/");
   };
   
-  const handleSignUp = (e) => {
+  const handleSignIn = (e) => {
     e.preventDefault();
 
+    // Réinitialiser les erreurs
+    setErrEmail("");
+    setErrPassword("");
+
+    // Validation des champs
+    let hasError = false;
+
     if (!email) {
-      setErrEmail("Enter your email");
+      setErrEmail("Veuillez entrer votre email");
+      hasError = true;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setErrEmail("Format d'email invalide");
+      hasError = true;
     }
 
     if (!password) {
-      setErrPassword("Create a password");
+      setErrPassword("Veuillez entrer votre mot de passe");
+      hasError = true;
+    } else if (password.length < 6) {
+      setErrPassword("Le mot de passe doit contenir au moins 6 caractères");
+      hasError = true;
     }
     
-    if (email && password) {
+    // Si pas d'erreur, procéder à la connexion
+    if (!hasError && email && password) {
       const firstName = email.split('@')[0];
       
+      // Simuler une authentification
+      // Dans un vrai projet, vous feriez un appel API ici
+      
+      // Sauvegarder les informations de session
+      const userInfo = {
+        email: email,
+        name: firstName,
+        loginTime: new Date().toISOString()
+      };
+      
+      localStorage.setItem('userToken', 'mock-jwt-token-' + Date.now());
+      sessionStorage.setItem('userInfo', JSON.stringify(userInfo));
+      
+      // Mettre à jour l'état
+      setIsLoggedIn(true);
       setSuccessMsg(
-        `Bonjour ${firstName} ! Merci de votre connexion. Nous validons votre accès. Restez connecté(e), une assistance vous sera envoyée à ${email}`
+        `Bonjour ${firstName} ! Merci de votre connexion. Vous êtes maintenant connecté(e). Bienvenue sur OREBI !`
       );
       
+      // Vider les champs du formulaire
       setEmail("");
       setPassword("");
     }
@@ -126,36 +170,58 @@ const SignIn = () => {
       </div>
       <div className="w-full lgl:w-1/2 h-full">
         {successMsg ? (
-          <div className="w-full lgl:w-[500px] h-full flex flex-col justify-center">
-            <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
-              {successMsg}
-            </p>
-            <button
-              id="logout-btn"
-              onClick={handleLogout}
-              className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold 
-            tracking-wide hover:bg-black hover:text-white duration-300"
-            >
-              Se déconnecter
-            </button>
+          <div className="w-full lgl:w-[500px] h-full flex flex-col justify-center items-center px-6">
+            <div className="text-center mb-8">
+              <div className="text-6xl text-green-500 mb-4">
+                <BsCheckCircleFill />
+              </div>
+              <h2 className="text-2xl font-titleFont font-bold text-gray-800 mb-4">
+                Connexion réussie !
+              </h2>
+              <p className="w-full px-4 py-6 text-green-600 font-medium font-titleFont text-center bg-green-50 rounded-lg border border-green-200">
+                {successMsg}
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4 w-full max-w-md">
+              <button
+                id="logout-btn"
+                onClick={handleLogout}
+                className="w-full h-12 bg-red-500 hover:bg-red-600 text-white rounded-md text-base font-titleFont font-semibold tracking-wide transition-colors duration-300"
+              >
+                🚪 Se déconnecter
+              </button>
+              
+              <Link to="/" className="w-full">
+                <button className="w-full h-12 bg-primeColor hover:bg-black text-gray-200 hover:text-white rounded-md text-base font-titleFont font-semibold tracking-wide transition-colors duration-300">
+                  🏠 Retour à l'accueil
+                </button>
+              </Link>
+              
+              <Link to="/shop" className="w-full">
+                <button className="w-full h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-md text-base font-titleFont font-semibold tracking-wide transition-colors duration-300">
+                  🛍️ Commencer mes achats
+                </button>
+              </Link>
+            </div>
           </div>
         ) : (
           <form className="w-full lgl:w-[450px] h-screen flex items-center justify-center">
             <div className="px-6 py-4 w-full h-[90%] flex flex-col justify-center overflow-y-scroll scrollbar-thin scrollbar-thumb-primeColor">
               <h1 className="font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-3xl mdl:text-4xl mb-4">
-                Sign in
+                Connexion
               </h1>
               <div className="flex flex-col gap-3">
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                    Email professionnel
                   </p>
                   <input
                     onChange={handleEmail}
                     value={email}
-                    className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
+                    className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none focus:border-primeColor"
                     type="email"
-                    placeholder="john@workemail.com"
+                    placeholder="votre@email.com"
                   />
                   {errEmail && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
@@ -167,14 +233,14 @@ const SignIn = () => {
 
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Password
+                    Mot de passe
                   </p>
                   <input
                     onChange={handlePassword}
                     value={password}
-                    className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
+                    className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none focus:border-primeColor"
                     type="password"
-                    placeholder="Create password"
+                    placeholder="Entrez votre mot de passe"
                   />
                   {errPassword && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
@@ -185,16 +251,17 @@ const SignIn = () => {
                 </div>
 
                 <button
-                  onClick={handleSignUp}
-                  className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
+                  onClick={handleSignIn}
+                  type="submit"
+                  className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md transition-colors duration-300"
                 >
-                  Sign In
+                  Se connecter
                 </button>
                 <p className="text-sm text-center font-titleFont font-medium">
-                  Don't have an Account?{" "}
+                  Pas encore de compte ?{" "}
                   <Link to="/signup">
                     <span className="hover:text-blue-600 duration-300">
-                      Sign up
+                      Créer un compte
                     </span>
                   </Link>
                 </p>
