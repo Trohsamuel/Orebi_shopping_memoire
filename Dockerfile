@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Étape 2 : Serveur Node.js (server.js)
+# Étape 2 : Serveur Express
 FROM node:18-alpine
 
 WORKDIR /app
@@ -20,6 +20,6 @@ RUN npm install --production
 COPY server.js ./
 COPY --from=builder /app/build ./build
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["node", "server.js"]
