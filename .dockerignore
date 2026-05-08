@@ -4,3 +4,6 @@ venv
 .git
 *.robot
 *.log
+*.png
+report.html
+log.html
